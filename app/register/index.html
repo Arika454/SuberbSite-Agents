@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Agent Sign-Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: #fff;
+        color: #333;
+      }
+
+      /* Banner */
+      .banner {
+        background: #7d3cb5;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .banner h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      /* Content layout */
+      .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 10%;
+      }
+
+      .content-text {
+        flex: 1 1 55%;
+        padding-right: 20px;
+      }
+      .content-text p {
+        font-size: 1.1rem;
+      }
+
+      .content-badge {
+        flex: 1 1 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .badge {
+        background: #7d3cb5;
+        color: #fff;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      /* Video + steps */
+      .video-steps {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 10%;
+        margin-top: 20px;
+      }
+      .video-placeholder {
+        flex: 1 1 55%;
+        height: 250px;
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #777;
+      }
+      .steps {
+        flex: 1 1 35%;
+        padding: 20px;
+      }
+      .steps p {
+        margin: 10px 0;
+      }
+      .steps strong {
+        color: #7d3cb5;
+      }
+
+      /* Accordion */
+      .accordion {
+        margin: 40px 10%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .accordion summary {
+        cursor: pointer;
+        padding: 15px;
+        background: #f9f9f9;
+        font-weight: bold;
+      }
+      .accordion p {
+        padding: 15px;
+        margin: 0;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .content,
+        .video-steps {
+          flex-direction: column;
+        }
+        .content-text,
+        .content-badge,
+        .video-placeholder,
+        .steps {
+          flex: 1 1 100%;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <h1>Sales Agent Sign-Up</h1>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="content">
+      <div class="content-text">
+        <p>
+          Become a member of our sales team and unlock a world of unlimited
+          earning potential! As a Sales Agent, you’ll play a crucial role in
+          connecting our products with customers, building relationships, and
+          driving sales growth.
+          <br /><br />
+          Our straightforward process is designed to support your success:
+          simply sign up, complete our comprehensive training program, and start
+          selling! With our competitive commission structure, you’ll have the
+          opportunity to earn significant income based on your performance.
+        </p>
+      </div>
+      <div class="content-badge">
+        <div class="badge">
+          20%<br />COMMISSION<br /><small>On Development Fees</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video + Steps -->
+    <div class="video-steps">
+      <div class="video-placeholder">[ Video Placeholder ]</div>
+      <div class="steps">
+        <p><strong>Step 1:</strong> Sign up to be a SuperbSite Sales Agent</p>
+        <p><strong>Step 2:</strong> Verify your email address</p>
+        <p><strong>Step 3:</strong> Complete the short training course</p>
+        <p><strong>Step 4:</strong> Start Selling!</p>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <details class="accordion">
+      <summary>+ Terms & Conditions</summary>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+        Proin nec ipsum at nisi tincidunt tincidunt.
+      </p>
+    </details>
+  </body>
+</html>
