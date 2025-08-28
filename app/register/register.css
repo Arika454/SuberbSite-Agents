@@ -1,0 +1,100 @@
+.register-page {
+  text-align: center; /* keep the rest centered */
+}
+.text-image-container {
+  display: flex; /* make children side by side */
+  align-items: flex-start; /* align top edges */
+  gap: 20px; /* space between text and image */
+  flex-wrap: wrap; /* wrap on smaller screens */
+  max-width: 1200px; /* optional container width */
+  margin: 0 auto; /* center container */
+}
+
+.text {
+  margin-top: 40px;
+  flex: 1; /* take up remaining space */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.commission {
+  height: 100px;
+  width: 100px;
+}
+
+/* Header at the top */
+.register-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #863e98;
+}
+
+.logo {
+  display: block; /* makes it respect alignment */
+  margin: 20px 0 0 20px; /* top + left spacing */
+  width: 100px; /* adjust as needed */
+  height: auto;
+  text-align: left; /* not really needed but safe */
+}
+
+.register-header h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Form styling */
+.register-form {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form input {
+  display: block; /* make sure it takes full line */
+  width: 100%; /* fill the form’s width */
+  max-width: 800px; /* but don’t exceed 800px */
+  margin: 0 auto; /* center horizontally if smaller than 800px */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.register-form select {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 800px;
+}
+.buttons {
+  display: flex; /* put children in a row */
+  gap: 10px; /* space between buttons */
+  justify-content: center; /* center them horizontally */
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
