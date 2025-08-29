@@ -1,29 +1,9 @@
-.register-page {
+.login-page {
   text-align: center; /* keep the rest centered */
-}
-.text-image-container {
-  display: flex; /* make children side by side */
-  align-items: flex-start; /* align top edges */
-  gap: 20px; /* space between text and image */
-  flex-wrap: wrap; /* wrap on smaller screens */
-  max-width: 1200px; /* optional container width */
-  margin: 0 auto; /* center container */
-}
-
-.text {
-  margin-top: 40px;
-  flex: 1; /* take up remaining space */
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.commission {
-  height: 100px;
-  width: 100px;
 }
 
 /* Header at the top */
-.register-header {
+.login-header {
   width: 100%;
   text-align: center;
   padding: 20px;
@@ -39,14 +19,20 @@
   text-align: left; /* not really needed but safe */
 }
 
-.register-header h1 {
+.login-header h1 {
   font-size: 50px;
   color: #ffffff;
   margin: 0;
 }
+.text {
+  margin-top: 40px;
+  flex: 1; /* take up remaining space */
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 /* Form styling */
-.register-form {
+.login-form {
   margin-top: 40px;
   background: #ffffff;
   padding: 20px 30px;
@@ -56,17 +42,17 @@
   gap: 15px;
 }
 
-.register-form input {
+.login-form input {
   display: block; /* make sure it takes full line */
   width: 100%; /* fill the form’s width */
-  max-width: 800px; /* but don’t exceed 800px */
+  max-width: 500px; /* but don’t exceed 800px */
   margin: 0 auto; /* center horizontally if smaller than 800px */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
 }
-.register-form select {
+.login-form select {
   margin: 0 auto;
   display: block;
   padding: 10px;
@@ -76,26 +62,21 @@
   width: 100%;
   max-width: 800px;
 }
-.buttons {
-  display: flex; /* put children in a row */
-  gap: 10px; /* space between buttons */
-  justify-content: center; /* center them horizontally */
-}
 
-.buttons button {
+.register {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin-bottom: 100px;
-}
-.register {
+  gap: 10px;
+  justify-content: center;
   color: rgb(255, 255, 255);
   background-color: #863e98;
   width: 400px;
-}
-.signin {
-  background-color: #e0e0e0;
-  cursor: pointer;
-  width: 400px;
+
+  /* Add these to center the button */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

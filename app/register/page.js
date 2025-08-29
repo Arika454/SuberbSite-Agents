@@ -71,7 +71,11 @@ export default function RegisterPage() {
         <img src="comission.webp" alt="Logo" className="comission" />
       </div>
 
-      <form onSubmit={handleRegister} className="register-form">
+      <form
+        id="register-form"
+        onSubmit={handleRegister}
+        className="register-form"
+      >
         <input
           type="email"
           placeholder="Email"
@@ -138,13 +142,19 @@ export default function RegisterPage() {
           <option value="North West">North West</option>
           <option value="Western Cape">Western Cape</option>
         </select>
-
-        <div className="buttons">
-          <button type="submit">Register</button>
-
-          <button type="submit">Sign In</button>
-        </div>
       </form>
+      <div className="buttons">
+        <button className="register" type="submit" form="register-form">
+          Register
+        </button>
+        <button
+          className="signin"
+          type="button"
+          onClick={() => router.push("/login")}
+        >
+          Sign In
+        </button>
+      </div>
     </div>
   );
 }
